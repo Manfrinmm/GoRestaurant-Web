@@ -58,6 +58,14 @@ export const Container = styled.div<IFoodPlateProps>`
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 376px) {
+      flex-direction: column;
+
+      div.availability-container {
+        margin-top: 16px;
+      }
+    }
+
     padding: 20px 30px;
     background: #e4e4eb;
     border-radius: 0px 0px 8px 8px;

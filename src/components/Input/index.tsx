@@ -40,7 +40,9 @@ const Input: React.FC<IInputProps> = ({ name, icon: Icon, ...rest }) => {
       ref: inputRef.current,
       path: 'value',
     });
-  }, [fieldName, registerField]);
+
+    handleInputBlur();
+  }, [fieldName, registerField, handleInputBlur]);
 
   return (
     <Container isFilled={isFilled} isFocused={isFocused}>

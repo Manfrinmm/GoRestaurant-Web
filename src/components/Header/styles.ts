@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: #c72828;
-  padding: 30px 0;
+  padding: 30px 16px;
+
+  width: 100%;
 
   header {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 0 160px;
     display: flex;
@@ -37,6 +39,15 @@ export const Container = styled.div`
             margin: 0 auto;
           }
         }
+      }
+    }
+
+    @media (max-width: 551px) {
+      display: flex;
+      flex-direction: column;
+
+      nav {
+        margin-top: 32px;
       }
     }
   }
